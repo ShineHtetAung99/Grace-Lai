@@ -132,6 +132,11 @@ li {
   color: #FFFFFF;
 }
 
+.dark-mode .navbar-mobile ul {
+  background-color: #05071C;
+}
+
+
 .dark-mode #header {
   border-bottom: 1px solid;
   border-color: #34b7a7;
