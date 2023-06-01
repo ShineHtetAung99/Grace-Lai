@@ -5,6 +5,124 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+*
+
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tg-list {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.tgl {
+  display: none;
+  &,
+  &:after,
+  &:before,
+  & *,
+  & *:after,
+  & *:before,
+  & + .tgl-btn {
+    box-sizing: border-box;
+    &::selection {
+      background: none;
+    }
+  }
+  
+  + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 3em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &:after,
+    &:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+    }
+    
+    &:after {
+      left: 0;
+    }
+    
+    &:before {
+      display: none;
+    }
+  }
+  
+  &:checked + .tgl-btn:after {
+    left: 50%;
+  }
+}
+
+.tgl-skewed {
+  + .tgl-btn {
+    overflow: hidden;
+    transform: skew(-10deg);
+    backface-visibility: hidden;
+    transition: all .2s ease;
+    font-family: sans-serif;
+    background: #f1f1f1;
+    &:after,
+    &:before {
+      transform: skew(10deg);
+      display: inline-block;
+      transition: all .2s ease;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      line-height: 2em;
+      font-weight: bold;
+      color: #34b7a7;
+    }
+    
+    &:after {
+      left: 100%;
+      content: attr(data-tg-on);
+    }
+    
+    &:before {
+      left: 0;
+      content: attr(data-tg-off);
+    }
+    
+    &:active {
+      /* background: #888; */
+       &:before {
+        left: -10%;
+      }
+    }
+  }
+  
+  &:checked + .tgl-btn {
+    border: 1px solid;
+    border-color: #34b7a7;
+    background: #070E35;
+    &:before {
+      left: -100%;
+    }
+
+    &:after {
+      left: 0;
+    }
+
+    &:active:after {
+      left: 10%;
+    }
+  }
+} 
 
 /*--------------------------------------------------------------
 # General
@@ -36,6 +154,14 @@
 
 .dark-mode .services .icon-box {
   background: #070E35;
+}
+
+.dark-mode .contact .info-box {
+  background: #070E35;
+}
+
+.dark-mode .contact .info-box h3,.dark-mode .contact .info-box p {
+  color: #FFFFFF;
 }
 
 .dark-mode #footer {
@@ -1008,7 +1134,7 @@ section {
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 50px;

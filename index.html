@@ -60,10 +60,16 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+        <ul class="tg-list">
+          <li class="tg-list-item">
+            <input class="tgl tgl-skewed" id="cb3" type="checkbox"/>
+            <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="cb3"></label>
+          </li>
+        </ul>
       </nav><!-- .navbar -->
 
-      <input type="checkbox" id="dark-mode-toggle">
+      
 
       <div class="header-social-links">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -662,7 +668,7 @@
             <div class="info-box shadow-sm">
               <i class="bx bx-map"></i>
               <h3>My Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Tamwe Township, Yangon</p>
             </div>
           </div>
   
@@ -682,9 +688,11 @@
   
           <div class="col-md-6 mt-4 d-flex align-items-stretch">
             <div class="info-box shadow-sm">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Me</h3>
-              <p>contact@example.com</p>
+              <a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" target="_blank">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Me</h3>
+                <p><a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" target="_blank">lailaigrace16@gmail.com</a></p>
+              </a>
             </div>
           </div>
           <div class="col-md-6 mt-4 d-flex align-items-stretch">
@@ -745,7 +753,7 @@
 
         // Check the initial state of the dark mode toggle
         var isDarkMode = localStorage.getItem("darkMode") === "true";
-        $("#dark-mode-toggle").prop("checked", isDarkMode);
+        $("#cb3").prop("checked", isDarkMode);
 
         // Set the dark mode class based on the initial state
         if (isDarkMode) {
@@ -753,7 +761,7 @@
         }
 
         // Handle dark mode toggle changes
-        $("#dark-mode-toggle").change(function() {
+        $("#cb3").change(function() {
           var isChecked = $(this).is(":checked");
           if (isChecked) {
             $("body").addClass("dark-mode");
