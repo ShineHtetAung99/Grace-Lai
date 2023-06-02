@@ -127,6 +127,16 @@ li {
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@media (max-width: 500px) {
+  .header-social-links {
+    display: none;
+  }
+}
+
+.dark-mode #preloader {
+  background: #000000;
+}
+
 .dark-mode,.dark-mode .navbar a {
   background-color: #05071C;
   color: #FFFFFF;
@@ -222,7 +232,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #000000;
+  background: #FFFFFF;
 }
 
 #preloader:before {
