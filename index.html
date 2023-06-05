@@ -74,7 +74,7 @@
         <a href="https://www.facebook.com/grace.aungmyint" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://instagram.com/grace.aungmyint?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/lai-grace-05316a205" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="viber://chat?number=09407708451" target="_blank" class="facebook"><i class="fa-brands fa-viber"></i></a>
+        <a href="viber://chat?number=+959407708451" onclick="return openViberChat(event);" target="_blank" class="facebook"><i class="fa-brands fa-viber"></i></a>
       </div>
 
     </div>
@@ -91,7 +91,7 @@
         <a href="https://www.facebook.com/grace.aungmyint" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://instagram.com/grace.aungmyint?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/lai-grace-05316a205" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="viber://chat?number=+959407708451" target="_blank" class="facebook"><i class="fa-brands fa-viber"></i></a>
+        <a href="viber://chat?number=+959407708451" onclick="return openViberChat(event);" target="_blank" class="facebook"><i class="fa-brands fa-viber"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -640,7 +640,7 @@
                 <a href="https://www.facebook.com/grace.aungmyint" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="https://instagram.com/grace.aungmyint?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/lai-grace-05316a205" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                <a href="viber://add?number=+959407708451" target="_blank" class="facebook"><i class="fa-brands fa-viber"></i></a>
+                <a href="viber://chat?number=+959407708451" onclick="return openViberChat(event);" target="_blank" class="facebook"><i class="fa-brands fa-viber"></i></a>
               </div>
             </div>
           </div>
@@ -650,7 +650,7 @@
               <a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" target="_blank">
                 <i class="bx bx-envelope"></i>
                 <h3>Email Me</h3>
-                <p><a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" target="_blank">lailaigrace16@gmail.com</a></p>
+                <p><a href="intent://compose?to=lailaigrace16@gmail.com#Intent;scheme=mailto;package=com.google.android.gm;end" target="_blank">lailaigrace16@gmail.com</a></p>
               </a>
             </div>
           </div>
@@ -732,6 +732,15 @@
           }
         });
     });
+
+    // viber link
+    function openViberChat(event) {
+      var mobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (mobileDevice) {
+        event.preventDefault();
+        window.location.href = 'viber://pa?chatURI=viber://chat?number=+959407708451';
+      }
+    }
   </script>
 </body>
 
