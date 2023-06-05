@@ -120,7 +120,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" target="_blank">lailaigrace16@gmail.com</a></li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" onclick="return openGmailChat(event);" target="_blank">lailaigrace16@gmail.com</a></li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Website:</strong> <a href="https://shinehtetaung99.github.io/Grace-Lai" target="_blank">https://shinehtetaung99.github.io/Grace-Lai</a></li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Phone:</strong> <a href="tel:09407708451">+959 407708451</a></li>
                 </ul>
@@ -312,7 +312,7 @@
               <ul>
                 <li>Tamwe Township, Yangon, Myanmar</li>
                 <li><a href="tel:09407708451">+959 407708451</a></li>
-                <li><a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" target="_blank">lailaigrace16@gmail.com</a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" onclick="return openGmailChat(event);" target="_blank">lailaigrace16@gmail.com</a></li>
               </ul>
               </p>
             </div>
@@ -647,10 +647,10 @@
   
           <div class="col-md-6 mt-4 d-flex align-items-stretch">
             <div class="info-box shadow-sm">
-              <a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" target="_blank">
+              <a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" onclick="return openGmailChat(event);" target="_blank">
                 <i class="bx bx-envelope"></i>
                 <h3>Email Me</h3>
-                <p><a href="intent://compose?to=lailaigrace16@gmail.com#Intent;scheme=mailto;package=com.google.android.gm;end" target="_blank">lailaigrace16@gmail.com</a></p>
+                <p><a href="https://mail.google.com/mail/?view=cm&to=lailaigrace16@gmail.com" onclick="return openGmailChat(event);" target="_blank">lailaigrace16@gmail.com</a></p>
               </a>
             </div>
           </div>
@@ -739,6 +739,20 @@
       if (mobileDevice) {
         event.preventDefault();
         window.location.href = 'viber://pa?chatURI=viber://chat?number=+959407708451';
+      }
+    }
+
+    // gmail link
+    function openGmailChat(event) {
+      var mobileDevice = /Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      var iosDevice = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (mobileDevice) {
+        event.preventDefault();
+        window.location.href = 'intent://compose?to=lailaigrace16@gmail.com#Intent;scheme=mailto;package=com.google.android.gm;end';
+      }
+      if (iosDevice) {
+        event.preventDefault();
+        window.location.href ='mailto:lailaigrace16@gmail.com';
       }
     }
   </script>
