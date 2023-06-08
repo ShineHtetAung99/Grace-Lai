@@ -63,12 +63,25 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <ul class="tg-list">
-        <li class="tg-list-item">
-          <input class="tgl tgl-skewed" id="cb3" type="checkbox"/>
-          <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="cb3"></label>
-        </li>
-      </ul>
+      <input type="checkbox" id="darkmode-toggle">
+      <label for="darkmode-toggle">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="3.5" stroke="#222222"/>
+          <path d="M12 5V3" stroke="#222222" stroke-linecap="round"/>
+          <path d="M12 21V19" stroke="#222222" stroke-linecap="round"/>
+          <path d="M16.9498 7.04996L18.364 5.63574" stroke="#222222" stroke-linecap="round"/>
+          <path d="M5.63608 18.3644L7.05029 16.9502" stroke="#222222" stroke-linecap="round"/>
+          <path d="M19 12L21 12" stroke="#222222" stroke-linecap="round"/>
+          <path d="M3 12L5 12" stroke="#222222" stroke-linecap="round"/>
+          <path d="M16.9498 16.95L18.364 18.3643" stroke="#222222" stroke-linecap="round"/>
+          <path d="M5.63608 5.63559L7.05029 7.0498" stroke="#222222" stroke-linecap="round"/>
+        </svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Environment / Moon">
+          <path id="Vector" d="M9 6C9 10.9706 13.0294 15 18 15C18.9093 15 19.787 14.8655 20.6144 14.6147C19.4943 18.3103 16.0613 20.9999 12 20.9999C7.02944 20.9999 3 16.9707 3 12.0001C3 7.93883 5.69007 4.50583 9.38561 3.38574C9.13484 4.21311 9 5.09074 9 6Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </label>
 
       <div class="header-social-links nav-social-links">
         <a href="https://www.facebook.com/grace.aungmyint" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -86,7 +99,7 @@
     <div class="container d-flex flex-column align-items-center">
       <h1 data-aos="zoom-in-down" data-aos-delay="250">Grace Lai</h1>
       <h2 data-aos="flip-right" data-aos-delay="900">It's not about being different.It's about being better and at best</h2>
-      <a data-aos="zoom-in-up" data-aos-delay="200" href="#about" class="btn-about">About Me</a>
+      <a data-aos ="zoom-in-up" data-aos-delay="200" href="#about" class="btn-about">About Me</a>
       <div class="header-social-links mt-3" data-aos="zoom-in-up" data-aos-delay="200">
         <a href="https://www.facebook.com/grace.aungmyint" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://instagram.com/grace.aungmyint?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -464,16 +477,16 @@
 
         <div class="section-title">
           <h2>Gallery</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
+        <h3 class="about-me mb-4">MY GALLERY</h3>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Nature</li>
+              <li data-filter=".filter-card">Travel</li>
+              <li data-filter=".filter-web">Work</li>
             </ul>
           </div>
         </div>
@@ -485,7 +498,7 @@
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -496,7 +509,7 @@
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -507,7 +520,7 @@
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -518,7 +531,7 @@
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -529,7 +542,7 @@
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -540,7 +553,7 @@
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -551,7 +564,7 @@
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -562,7 +575,7 @@
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -573,7 +586,7 @@
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-arrows-angle-expand"></i></a>
                 </div>
               </div>
             </div>
@@ -651,10 +664,6 @@
         &copy; Copyright <strong><span>Grace Lai</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
         Developed  by <a href="https://www.facebook.com/shinehtetaung99" target="_blank">Shine Htet Aung</a>
       </div>
     </div>
@@ -688,7 +697,7 @@
 
         // Check the initial state of the dark mode toggle
         var isDarkMode = localStorage.getItem("darkMode") === "true";
-        $("#cb3").prop("checked", isDarkMode);
+        $("#darkmode-toggle").prop("checked", isDarkMode);
 
         // Set the dark mode class based on the initial state
         if (isDarkMode) {
@@ -696,7 +705,7 @@
         }
 
         // Handle dark mode toggle changes
-        $("#cb3").change(function() {
+        $("#darkmode-toggle").change(function() {
           var isChecked = $(this).is(":checked");
           if (isChecked) {
             $("body").addClass("dark-mode");
